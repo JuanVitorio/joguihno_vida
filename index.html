@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Simulador de Vida</title>
+</head>
+
+<body>
+
+  <div class="box">
+
+    <h1>Simulador de Vida</h1>
+
+    <div class="status">
+      <div class="group">
+        <div class="dinheiro txt">Você tem <span id="quan_dinheiro">50</span> de dinheiro</div>
+        <div class="fome txt">Você tem 0 de fome</div>
+      </div>
+      <div class="group">
+        <div class="sono txt">Você tem 0 de sono</div>
+        <div class="tedio txt">Você tem 0 de tédio</div>
+      </div>
+    </div>
+
+    <div class="group">
+      <button onclick="trabalhar()">Trabalhar</button>
+      <button onclick="comer()">Comer</button>
+    </div>
+    <div class="group">
+      <button onclick="dormir()">Dormir</button>
+      <button onclick="jogar()">Jogar</button>
+    </div>
+  </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
