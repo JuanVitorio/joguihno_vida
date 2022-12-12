@@ -17,21 +17,22 @@
 
     <div class="status">
       <div class="group">
-        
+        <div class="d_dinheiro txt">Dinheiro: <span id="dinheiro">50</span></div>
+        <div class="d_fome txt">Fome: <span id="fome">0</span></div>
       </div>
       <div class="group">
-        <div class="sono txt">Você tem 0 de sono</div>
-        <div class="tedio txt">Você tem 0 de tédio</div>
+        <div class="d_sono txt">Sono: <span id="sono">0</span></div>
+        <div class="d_tedio txt">Tédio: <span id="tedio">0</span></div>
       </div>
     </div>
 
     <div class="group">
-      <button onclick="trabalhar()">Trabalhar</button>
-      <button onclick="comer()">Comer</button>
+      <button onclick="trabalhar()" class="trabalhar">Trabalhar</button>
+      <button onclick="comer()" class="comer">Comer</button>
     </div>
     <div class="group">
-      <button onclick="dormir()">Dormir</button>
-      <button onclick="jogar()">Jogar</button>
+      <button onclick="dormir()" class="sono">Dormir</button>
+      <button onclick="jogar()" class="tedio">Jogar</button>
     </div>
   </div>
 

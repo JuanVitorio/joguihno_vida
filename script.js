@@ -3,10 +3,10 @@ let fome = 0
 let sono = 0
 let tedio = 0
 
-let v_dinheiro = document.querySelector('#quan_dinheiro')
-let v_fome = document.querySelector('.fome')
-let v_sono = document.querySelector('.sono')
-let v_tedio = document.querySelector('.tedio')
+let v_dinheiro = document.querySelector('#dinheiro')
+let v_fome = document.querySelector('#fome')
+let v_sono = document.querySelector('#sono')
+let v_tedio = document.querySelector('#tedio')
 
 function morrer(dinheiro, fome, sono, tedio) {
   if (fome >= 100) {
@@ -39,9 +39,9 @@ function trabalhar() {
   tedio += 10
   morrer(dinheiro, fome, sono, tedio)
   v_dinheiro.innerHTML = dinheiro
-  v_fome.innerHTML = 'Você tem ' + fome + ' de fome'
-  v_sono.innerHTML = 'Você tem ' + sono + ' de sono'
-  v_tedio.innerHTML = 'Você tem ' + tedio + ' de tédio'
+  v_fome.innerHTML = fome
+  v_sono.innerHTML = sono
+  v_tedio.innerHTML = tedio
 }
 
 function comer() {
@@ -56,7 +56,7 @@ function comer() {
     fome = 0
   }
   v_dinheiro.innerHTML = dinheiro
-  v_fome.innerHTML = 'Você tem ' + fome + ' de fome'
+  v_fome.innerHTML = fome
 
 }
 
@@ -72,8 +72,8 @@ function dormir() {
   if (sono < 0) {
     sono = 0
   }
-  v_sono.innerHTML = 'Você tem ' + sono + ' de sono'
-  v_fome.innerHTML = 'Você tem ' + fome + ' de fome'
+  v_sono.innerHTML = sono
+  v_fome.innerHTML = fome
 }
 
 function jogar() {
@@ -91,9 +91,9 @@ function jogar() {
     tedio = 0
   }
 
-  v_tedio.innerHTML = 'Você tem ' + tedio + ' de tédio'
-  v_sono.innerHTML = 'Você tem ' + sono + ' de sono'
-  v_fome.innerHTML = 'Você tem ' + fome + ' de fome'
+  v_tedio.innerHTML = tedio
+  v_sono.innerHTML = sono
+  v_fome.innerHTML = fome
 
 }
 

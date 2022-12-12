@@ -20,6 +20,10 @@ button {
   width: 200px;
   height: 45px;
   margin-left: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
 }
 
 h1 {
@@ -41,4 +45,32 @@ h1 {
 
 #quan_dinheiro {
   color: rgb(36, 171, 36);
+}
+
+.d_dinheiro {
+  color: green;
+}
+
+.d_fome {
+  color: orange;
+}
+
+.d_tedio {
+  color: rgb(193, 193, 77);
+}
+
+.d_sono {
+  color: rgb(127, 183, 255);
+}
+
+span {
+  color: rgb(47, 47, 47);
+}
+
+.tedio {
+  background-color: rgba(193, 193, 77, 0.3);
+}
+
+.trabalhar {
+  background-color: rgba(0, 128, 0, 0.3);
 }
